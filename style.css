@@ -207,4 +207,16 @@ form{
     /* padding-left: 0px; */
   }
 
+  .group{
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .item{
+    align-self: center;
+  }
+  .item-double {
+    flex: 2;
+    align-self: center;
+    
+    }
 }
