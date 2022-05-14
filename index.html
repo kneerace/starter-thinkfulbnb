@@ -34,8 +34,48 @@
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
-        <!-- Create a form here -->
-        
+        <!-- creating form -->
+        <form>
+          <!-- creating based on list layout -unordered -->
+          <ul class="form-ul">
+            <!-- 1st list - for "Location" - as string input -->
+            <li class="form-row">
+                <label for="location">Location</label>
+                <input id="location" type="text" name="location"
+                  placeholder="Search destination" required />
+            </li>
+
+            <!-- 2nd list - for "Arrive" for arrival date- as calander picker -->
+            <li class="form-row">
+                <label for="arrive">Arrive</label>
+                <input id="arrive" type="date" name="arrive" 
+                  placeholder="mm/dd/yyyy" required />
+            </li>
+
+            <!-- 3rd list - for "Depart" for departure date - as calander picker -->
+            <li class="form-row">
+                <label for="depart">Depart</label>
+                <input id="depart" type="date" name="depart"
+                    placeholder="mm/dd/yyyy" required />
+            </li>
+
+            <!-- 4th list - for "Type" - as single drop down selector -->
+            <li class="form-row">
+              <label for="type">Type</label>
+              <select name="type" id="type" size="1">
+                  <option value="apartment">Apartment</option>
+                  <option value="barn">Barn</option>
+                  <option value="houseboat">Houseboat</option>
+                  <option value="tinyHouse">Tiny House</option>
+                  <option value="yacht">Yatch</option>
+                  <option value="yurt">Yurt</option>
+              </select>
+            </li>
+            <li class="form-row">
+                <button type="search" >Search</button>
+            </li>
+          </ul>
+        </form>
       </section>
 
       <!-- About -->
