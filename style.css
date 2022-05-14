@@ -54,24 +54,35 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  /* padding: 20px 20px 0 20px; */
+  padding: 20px 20px 5px 20px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  /* font-size: 72px; */
+  font-size: 100px;
   color: #fff;
+  margin: 0px;
 }
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
 
 header nav ul li {
   list-style-type: none;
+
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
+  font-size: 22px;
 }
 
 header nav ul li a:hover {
