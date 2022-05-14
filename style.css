@@ -72,7 +72,7 @@ header {
 
 header nav ul{
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  /* row in desktop */
   justify-content: center;
   }
 
@@ -85,7 +85,7 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
-  font-size: larger;
+  font-size: larger;  /*  medium in desktop */
 }
 
 header nav ul li a:hover {
@@ -153,3 +153,17 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px){
+  .logo {
+    font-size: 35px;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+  
+
+}
