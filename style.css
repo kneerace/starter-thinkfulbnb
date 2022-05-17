@@ -60,8 +60,8 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 45px;
-  /* font-size: 65px; */
+  /* font-size: 45px; */
+  font-size: 65px;
   color: #fff;
 }
 
@@ -107,7 +107,7 @@ form {
 form div{
   display: flex;
   justify-content: space-between;
-  margin: 11px;
+  /* margin: 11px; */
 }
 
 form label {
@@ -188,10 +188,13 @@ footer p {
   }
 
   .group{
+    display: flex; /* added */
     flex-direction: row;
     margin-top: 0;
   }
   .item{
+    display: flex;
+    flex-direction: column;
     align-self: center;
   }
   .item-double {
