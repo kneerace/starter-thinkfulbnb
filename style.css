@@ -1,18 +1,13 @@
 /* -------  General Styles ------- */
 
-main > *{
-  width: 100%}
-
 body {
   font-family: "Lato", sans-serif;
 }
 
 h2 {
-  /* font-size: 26px; */
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
   margin: 0 10px 10px 10px;
-  padding: 0 10px;
   text-align: center;
 }
 
@@ -36,7 +31,6 @@ section.alternate-background {
 }
 
 main img {
-  /* width: 100px; */
   width: 100%;
 }
 
@@ -60,36 +54,34 @@ main img {
 
 header {
   background-color: #ff385c;
-  /* padding: 20px 20px 0 20px; */
   padding: 20px 20px 5px 20px;
   text-align: center;
-  width: 100%;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  /* font-size: 72px; */
-  font-size: 80px;
+  font-size: 45px;
+  /* font-size: 65px; */
   color: #fff;
-  margin: 0px;
 }
+
+/* ul{
+  padding-inline-start: 0;
+} */
 
 header nav ul{
   display: flex;
   flex-direction: row;  /* row in desktop */
   justify-content: center;
   }
-
 header nav ul li {
   list-style-type: none;
-
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
-  font-size: larger;  /*  medium in desktop */
+  padding: 0 10px 0 10px;
 }
 
 header nav ul li a:hover {
@@ -97,10 +89,25 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+header div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* -------  Search Form ------- */
 form {
+  font-size: 20px;
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+  display: flex;
+  justify-content: space-between;
+  margin: 11px;
 }
 
 form label {
@@ -110,7 +117,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 160px;
 }
 
 form button {
@@ -120,31 +127,14 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
-  
 }
 
-.form-ul{
-  list-style-type: none;
-  margin: 0;
-  padding-inline-start: 0;
-  
+/* -------  Host ------- */
+
+section ul{
+  padding-left: 40px;
 }
 
-.form-row{
-  display: flex;
-  justify-content: flex-end;
-  padding: .5em;
-}
-
-.form-row > label{
-  flex: 1;
-  padding: .5em 1 em .5em 0;
-}
-
-.form-row > input, 
-.form-row > select {
-  flex: 2;
-}
 /* -------  Footer ------- */
 
 footer {
@@ -158,57 +148,43 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 480px){
-  .logo {
-    font-size: 35px;
-  }
 
-  header{
+@media all and (min-width: 480px) {
+  header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
-    align-items: center;
-}
-
-h2{
-  font-size: 26px;
-}
-
-form{
-  display: flex;
-  /* justify-content: space-between; */
-  align-content: center;
-  width: 100%;
- }
- 
- .form-ul{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  }
-  .form-ul :last-child{
-    padding-right: 0;
+    padding: 10px 30px 0;
   }
 
-  .form-row{
+  ul{
+    padding-top: 8px;
+  }
+
+  form{
     display: flex;
-    flex-direction: column;
-    padding-right: 6em;
-    width: 100%;
-  }
- 
-  .form-row >button {
-    padding: 8px 8px;
-    width: 100%
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
   }
 
-  form select, form input {
-    margin-bottom: 10px;
-    width: 100%;
+  form input, form select{
+    margin-bottom: 0;
   }
-  form button{
-    text-align: center;
-    /* padding-left: 0px; */
+
+  form label{
+    padding-right: 5px;
+  }
+
+  form div{
+    flex: 1;
+    margin: 10px;
+    width: 100%;
+    justify-content: none;
+  }
+
+  .logo {
+    font-size: 45px;
   }
 
   .group{
@@ -221,6 +197,24 @@ form{
   .item-double {
     flex: 2;
     align-self: center;
-    
     }
+  
+    /* header nav ul{
+      display: flex;
+      flex-direction: row;  /* row in desktop */
+      /* justify-content: center; */
+      /* } */ */
+
+    form select, form input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    form button{
+      flex: 1;
+      text-align: center;
+      padding: 8px 8px;
+      width: 100%
+      /* padding-left: 0px; */
+    }
+  
 }
