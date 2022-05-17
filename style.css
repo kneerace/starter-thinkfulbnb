@@ -180,7 +180,7 @@ footer p {
     flex: 1;
     margin: 10px;
     width: 100%;
-    justify-content: none;
+    justify-content: center;
   }
 
   .logo {
@@ -199,21 +199,15 @@ footer p {
     align-self: center;
     }
   
-    /* header nav ul{
-      display: flex;
-      flex-direction: row;  /* row in desktop */
-      /* justify-content: center; */
-      /* } */ */
-
     form select, form input {
       margin-bottom: 10px;
-      width: 100%;
+      /* width: 100%; */
     }
     form button{
-      flex: 1;
+      flex: .5;
       text-align: center;
       padding: 8px 8px;
-      width: 100%
+      /* width: 100% */
       /* padding-left: 0px; */
     }
   
